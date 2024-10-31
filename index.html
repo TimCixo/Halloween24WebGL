@@ -10,11 +10,14 @@
     <meta property="og:image" content="https://drive.google.com/file/d/1ybZVCtXf4CC-_rw179EAD1JyHe_6gq8a/view?usp=drive_link" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="PinedApple" />
+    <meta name="theme-color" content="#231F20" />
     
     <title>Unity WebGL Player | Halloween24</title>
   </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1280 height=800 style="width: 1280px; height: 800px; background: #231F20"></canvas>
+  <body style="text-align: center; margin: 0px;">
+    <div id="unity-container" style="width: 1280px; height: 800px; margin: auto;">
+      <canvas id="unity-canvas" width=1280 height=800 style="width: 1280px; height: 800px; background: #231F20"></canvas>
+    </div>
     <script src="Build/Halloween24.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -33,8 +36,6 @@
         companyName: "PinedApple",
         productName: "Halloween24",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
